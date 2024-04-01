@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definiton JournalEntries'
+define service ZUI_JE_M_PHS {
+  expose ZC_JE_M_PHS;
+}

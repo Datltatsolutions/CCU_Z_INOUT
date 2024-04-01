@@ -1,0 +1,78 @@
+@Metadata.layer: #CUSTOMER
+annotate view ZC_JE_M_PHS
+    with 
+{
+    @UI:{ lineItem: [{position: 10,importance: #HIGH }],
+           identification: [{position: 10 }],
+           selectionField: [{position: 10 }] }
+    CompanyCode;
+    @UI:{ lineItem: [{position: 20,importance: #HIGH }],
+           identification: [{position: 20 }],
+           selectionField: [{position: 20 }] }
+    FiscalYear;
+    @UI:{ lineItem: [{position: 30,type: #WITH_URL,
+    url: 'WebsiteUrl',cssDefault.width: '5em',importance: #HIGH }],
+           identification: [{position: 30 }]}
+    
+    PDF;
+    @UI:{ lineItem: [{position: 36,importance: #HIGH }],
+           identification: [{position: 36 }]}
+    CountPreview;
+    @UI:{ lineItem: [{position: 37,importance: #HIGH }],
+           identification: [{position: 37 }]}
+    LastTimePreview;
+    @UI:{ lineItem: [{position: 38,importance: #HIGH }],
+           identification: [{position: 38 }]}
+    AccountingDocument;
+    
+    @UI:{ lineItem: [{position: 40,importance: #HIGH }],
+           identification: [{position: 40 }],
+           selectionField: [{position: 40 }] }
+    AccountingDocumentType;
+    @UI:{ lineItem: [{position: 50,importance: #HIGH }],
+           identification: [{position: 50 }] }
+    DocumentDate;
+    @UI:{ lineItem: [{position: 60,importance: #HIGH }],
+           identification: [{position: 60 }],
+           selectionField: [{position: 60 }] }
+    PostingDate;
+    @UI:{ lineItem: [{position: 70,importance: #HIGH }],
+           identification: [{position: 70 }] }
+    FiscalPeriod;
+    @UI:{ lineItem: [{position: 80,importance: #HIGH }],
+           identification: [{position: 80 }] }
+    AccountingDocumentCreationDate;
+    @UI:{ lineItem: [{position: 90,importance: #HIGH }],
+           identification: [{position: 90 }]}
+    AccountingDocCreatedByUser;
+    @UI:{ lineItem: [{position: 100,importance: #HIGH }],
+           identification: [{position: 100 }] }
+    DocumentReferenceID;
+    @UI:{ lineItem: [{position: 110,importance: #HIGH }],
+           identification: [{position: 110 }] }
+    ReverseDocument;
+    @UI:{ lineItem: [{position: 120,importance: #HIGH }],
+           identification: [{position: 120 }] }
+    ReverseDocumentFiscalYear;
+    @UI:{ lineItem: [{position: 130,importance: #HIGH }],
+           identification: [{position: 130 }] }
+    AccountingDocumentHeaderText;
+    @UI:{ lineItem: [{position: 140,importance: #HIGH }],
+           identification: [{position: 140 }] }
+    TransactionCurrency;
+    @UI:{ lineItem: [{position: 150,importance: #HIGH }],
+           identification: [{position: 150 }] }
+    AccountingDocumentCategory;
+    @UI:{ lineItem: [{position: 160,importance: #HIGH }],
+           identification: [{position: 160 }] }
+    ReferenceDocumentType;
+    @UI:{ lineItem: [{position: 170,importance: #HIGH }],
+           identification: [{position: 170 }] }
+    OriginalReferenceDocument;
+    @UI:{ lineItem: [{position: 180,importance: #HIGH },
+           {type: #FOR_ACTION, dataAction: 'Preview_API', label: 'Preview' }],
+           identification: [{position: 180 }] }
+    ReversalReason;
+    
+    
+}
